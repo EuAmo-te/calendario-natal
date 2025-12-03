@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário do Advento ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style-stars.css?v=1.2">
+    <link rel="stylesheet" href="style-heart.css?v=1.2">
+    <link rel="stylesheet" href="style-rose.css?v=1.2">
+</head>
+<body>
+
+    <!-- Snow Effect Container -->
+    <div class="snow-container" aria-hidden="true"></div>
+    
+    <!-- Overlays -->
+    <div id="starry-night-overlay"></div>
+    <div id="heart-overlay"></div>
+    <div id="rose-overlay"></div>
+
+    <header>
+        <h1>Para a minha <span class="highlight">Princesa que eu amo</span> ❤️</h1>
+        <button id="info-btn" class="info-btn" title="Como funciona?">ℹ️</button>
+    </header>
+
+    <main>
+        <div class="calendar-grid" id="calendar-grid">
+            <!-- Days will be injected by JS -->
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">não não não meu anjo tens de esperar 🤫</div>
+
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content info-content">
+            <span class="close-btn" id="close-info-btn">&times;</span>
+            <h2>Como funciona? ℹ️</h2>
+            <div class="info-body">
+                <p class="intro-text">Bem-vinda ao teu Calendário do Advento! ❤️</p>
+                
+                <div class="info-section">
+                    <h3>🎁 Presentes Reais</h3>
+                    <p>Todos os fins de semana há um miminho físico! Eu entrego-te pessoalmente ou podemos sair para o descobrir.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🔍 Pistas</h3>
+                    <p>Algumas caixas escondem pistas para encontrares os presentes. Fica atenta!</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🧩 O que significam os ícones?</h3>
+                    <div class="icons-grid">
+                        <span>🎧 Áudio</span>
+                        <span>🧩 Puzzle</span>
+                        <span>💬 Chat</span>
+                        <span>✨ Raspadinha</span>
+                        <span>🎥 Vídeo</span>
+                        <span>🎁 Surpresa</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>✨ Detalho respadinha</h3>
+                    <P>Para as Raspadinhas ganhes o que esta escrito, podes escolher quando reclamar o premio o dia o sitio a hora até ! Elas não tem prazo de validade !</P>
+                </div>
+
+                <button id="start-btn" class="action-btn">Começar! 🚀</button>
+                <p style="font-size: 0.6rem; text-align: center; margin-top: 10px; color: #aaa;">V.1.2</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for opening days -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-day-modal-btn">&times;</span>
+            <h2 id="modal-day-title">Dia X</h2>
+            <div id="modal-body" class="modal-body">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js?v=1.2"></script>
+    <script src="flower.js?v=1.2"></script>
+    <script src="script.js?v=1.2"></script>
+</body>
+</html>
